@@ -23,7 +23,6 @@ feed.ready(async function () {
   const s1 = feed.replicate(true, { live: true })
   const s2 = clone.replicate(false, { live: true })
 
-
   const client = new HyperETH(s1)
   const server = new HyperETH(s2, httpEth)
 

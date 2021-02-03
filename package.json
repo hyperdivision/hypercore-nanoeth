@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "description": "Hypercore extension for Nanoeth",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "nanoeth": "^2.6.1"
+  },
   "devDependencies": {
-    "hypercore": "^9.7.5"
+    "got": "^11.8.1",
+    "hypercore": "^9.7.5",
+    "random-access-memory": "^3.1.2"
   },
   "repository": {
     "type": "git",

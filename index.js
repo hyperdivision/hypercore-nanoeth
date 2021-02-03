@@ -22,7 +22,7 @@ class RPC {
           try {
             res = await onrequest(message)
           } catch (err) {
-            res = { jsonrpc: '2.0', id: message.id, error: { message: err.message, code: err.code || 0 }}
+            res = { jsonrpc: '2.0', id: message.id, error: { message: err.message, code: err.code || 0 } }
           }
           return self.ext.send(res)
         }
