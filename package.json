@@ -1,0 +1,20 @@
+{
+  "name": "hypercore-nanoeth",
+  "version": "0.0.0",
+  "description": "Hypercore extension for Nanoeth",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "hypercore": "^9.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyperdivision/hypercore-nanoeth.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hyperdivision/hypercore-nanoeth/issues"
+  },
+  "homepage": "https://github.com/hyperdivision/hypercore-nanoeth"
+}
