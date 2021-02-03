@@ -10,7 +10,6 @@ class RPC {
   constructor (stream, onrequest) {
     this.id = 0
     this.inflight = new Map()
-    this.onrequest = onrequest || null
 
     const self = this
 
@@ -20,6 +19,7 @@ class RPC {
         if (message.method) {
           let res
           try {
+            if (!onrequest) throw new Error('Remote is not a server')
             res = await onrequest(message)
           } catch (err) {
             res = { jsonrpc: '2.0', id: message.id, error: { message: err.message, code: err.code || 0 } }
